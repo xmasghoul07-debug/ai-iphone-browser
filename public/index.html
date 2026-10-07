@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Pocket AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Smart assistant</p>
+          <h1>Pocket AI</h1>
+        </div>
+        <button id="clearBtn" class="icon-btn" aria-label="Clear chat">Clear</button>
+      </header>
+
+      <main class="chat-panel" id="chatPanel" aria-live="polite"></main>
+
+      <div class="composer-wrap">
+        <div class="toolbar">
+          <button id="voiceBtn" class="tool-btn" type="button" aria-label="Voice input">🎙️</button>
+          <button id="speakBtn" class="tool-btn" type="button" aria-label="Speak response">🔊</button>
+        </div>
+
+        <form id="chatForm" class="composer">
+          <textarea
+            id="userInput"
+            rows="1"
+            placeholder="Ask anything..."
+            aria-label="Type your message"
+          ></textarea>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

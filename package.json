@@ -1,0 +1,23 @@
+{
+  "name": "ai-iphone-browser",
+  "version": "1.0.0",
+  "description": "A mobile-first browser AI app optimized for iPhone 13",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "ai",
+    "iphone",
+    "browser",
+    "chatgpt",
+    "mobile"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.41.0"
+  }
+}
